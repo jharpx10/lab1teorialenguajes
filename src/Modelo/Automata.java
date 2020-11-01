@@ -20,6 +20,7 @@ public class Automata {
         String estadoActualIgual = "EI";
         Nodo c = null;
         int n = 0;
+        boolean chekpc=false;
         String mensaje = "";
         String mensajeIgual = "";
         secuencia += " ";
@@ -27,7 +28,15 @@ public class Automata {
         
         
         for (char a : secuencia.toCharArray()) {
+          if(a==';'){
+         chekpc=true;
+          }else if(a==' '){
           
+          }else
+          {
+          chekpc=false;
+          }
+            
             estadoPrevioError = estadoActual;
             c = listar(c, estadoActual, a);
 
@@ -2913,6 +2922,10 @@ public class Automata {
             }
 
         }
+        if(!chekpc && !isEmpty(secuencia)){
+        mensaje+="\nFalta punto y coma al final de la linea: "+linea;
+        }
+        
 
         return mensaje;
     }
@@ -3255,6 +3268,17 @@ public class Automata {
         }
 
         return false;
+    }
+
+    private static boolean isEmpty(String secuencia) {
+    
+        for (char a : secuencia.toCharArray()) {
+    if(a!=' ')
+    {
+    return false;
+    }
+    }
+        return true;
     }
 
 }
