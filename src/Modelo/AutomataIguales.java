@@ -12,8 +12,7 @@ package Modelo;
 public class AutomataIguales {
 
     public static ModelMessagePackage Automata(char a, String secuencia, int n, int linea, String estadoActual, Nodo c) {
-
-        Nodo head = listar(c, estadoActual, a);
+        c = listar(c, estadoActual, a);
 
         ModelMessagePackage message = new ModelMessagePackage();
         message.setC(c);
@@ -68,6 +67,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "CS";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("&")) {
@@ -124,6 +125,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "CS";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("&")) {
@@ -179,6 +182,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -236,6 +241,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -291,6 +298,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -348,6 +357,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -403,6 +414,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -460,6 +473,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -515,6 +530,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -572,6 +589,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -627,6 +646,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -684,6 +705,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -739,6 +762,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -796,6 +821,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -851,6 +878,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -908,6 +937,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -963,6 +994,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -1020,6 +1053,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -1075,6 +1110,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -1132,6 +1169,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -1187,6 +1226,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ERROR";
@@ -1244,6 +1285,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -1299,6 +1342,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
@@ -1356,6 +1401,124 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "VARNC";
+            } else if (isOperator(String.valueOf(a))) {
+                estadoActual = "EPVAR";
+            } else if (String.valueOf(a).equals("&")) {
+                estadoActual = "&1";
+            } else if (String.valueOf(a).equals("|")) {
+                estadoActual = "|1";
+            } else {
+                estadoActual = "ERROR";
+            }
+        } else if (estadoActual.equals("VARNC")) {
+            if (String.valueOf(a).equals("i")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("n")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("t")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("f")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("l")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("o")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("a")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("g")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("b")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("e")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("c")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("h")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("r")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("u")) {
+                estadoActual = "ERROR";
+            } else if (isLetter(String.valueOf(a))) {
+                estadoActual = "ERROR";
+            } else if (isNumber(String.valueOf(a))) {
+                estadoActual = "VARNCC";
+            } else if (String.valueOf(a).equals(" ")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(";")) {
+                estadoActual = "ERRORC";
+            } else if (String.valueOf(a).equals("=")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("-")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("+")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(";")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
+            } else if (isOperator(String.valueOf(a))) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("&")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("|")) {
+                estadoActual = "ERROR";
+            } else {
+                estadoActual = "ERROR";
+            }
+        } else if (estadoActual.equals("VARNCC")) {
+            if (String.valueOf(a).equals("i")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("n")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("t")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("f")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("l")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("o")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("a")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("g")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("b")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("e")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("c")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("h")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("r")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("u")) {
+                estadoActual = "ERROR";
+            } else if (isLetter(String.valueOf(a))) {
+                estadoActual = "ERROR";
+            } else if (isNumber(String.valueOf(a))) {
+                estadoActual = "VARNCC";
+            } else if (String.valueOf(a).equals(" ")) {
+                estadoActual = "EPVAR";
+            } else if (String.valueOf(a).equals(";")) {
+                estadoActual = "ACEPTE";
+            } else if (String.valueOf(a).equals("=")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("-")) {
+                estadoActual = "EPVAR";
+            } else if (String.valueOf(a).equals("+")) {
+                estadoActual = "EPVAR";
+            } else if (String.valueOf(a).equals(";")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "EPVAR";
             } else if (String.valueOf(a).equals("&")) {
@@ -1412,6 +1575,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "CS";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("&")) {
@@ -1467,6 +1632,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "CSL";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "CSL";
@@ -1524,6 +1691,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "EVAR";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("&")) {
@@ -1580,6 +1749,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "CS";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("&")) {
@@ -1595,8 +1766,7 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals("n")) {
                 estadoActual = "VAR";
             } else if (String.valueOf(a).equals("t")) {
-                estadoActual = "VAR"
-                        + "";
+                estadoActual = "VAR";
             } else if (String.valueOf(a).equals("f")) {
                 estadoActual = "F";
             } else if (String.valueOf(a).equals("l")) {
@@ -1637,6 +1807,8 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "CS";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("&")) {
@@ -1692,6 +1864,8 @@ public class AutomataIguales {
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ERROR";
             } else if (String.valueOf(a).equals("'")) {
+                estadoActual = "ERROR";
+            } else if (String.valueOf(a).equals(".")) {
                 estadoActual = "ERROR";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ERROR";
@@ -1749,6 +1923,8 @@ public class AutomataIguales {
                 estadoActual = "ERRORC";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERRORC";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ERRORC";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ERRORC";
             } else if (String.valueOf(a).equals("&")) {
@@ -1805,6 +1981,8 @@ public class AutomataIguales {
                 estadoActual = "ACEPTE";
             } else if (String.valueOf(a).equals("'")) {
                 estadoActual = "ACEPTE";
+            } else if (String.valueOf(a).equals(".")) {
+                estadoActual = "ACEPTE";
             } else if (isOperator(String.valueOf(a))) {
                 estadoActual = "ACEPTE";
             } else if (String.valueOf(a).equals("&")) {
@@ -1824,6 +2002,7 @@ public class AutomataIguales {
         message.setMensaje(result);
 
         return message;
+
     }
 
     private static boolean isNumber(String a) {
@@ -1885,7 +2064,7 @@ public class AutomataIguales {
                 || a.equalsIgnoreCase("T") || a.equalsIgnoreCase("U")
                 || a.equalsIgnoreCase("V") || a.equalsIgnoreCase("W")
                 || a.equalsIgnoreCase("X") || a.equalsIgnoreCase("Y")
-                || a.equalsIgnoreCase("Z")) {
+                || a.equalsIgnoreCase("Z") || a.equalsIgnoreCase("_")) {
             return true;
         }
 
@@ -1953,7 +2132,13 @@ public class AutomataIguales {
             case "|1":
                 err += "Se espera variable después de operador e ingresó: " + entrada + "\n";
                 break;
-
+            case "VARNC":
+                 err += "Se espera número para parte decimal e ingresó: " + entrada + "\n";
+                break;
+                 case "VARNCC":
+                 err += "Se espera número para parte decimal, operador o fin de secuencia  e ingresó: " + entrada + "\n";
+                break;
+                
         }
 
         return err;
@@ -2007,56 +2192,49 @@ public class AutomataIguales {
                     Nodo edt = Nodo.getLastChildFrom(c);
                     edt.setLiga(new Nodo("OPDOR", "&&"));
                     edt = edt.getLiga();
-                }else{
-                 Nodo edt = Nodo.getLastChildFrom(c);
+                } else {
+                    Nodo edt = Nodo.getLastChildFrom(c);
                     edt.setLiga(new Nodo("OPDOR", "&"));
                     edt = edt.getLiga();
-               }
+                }
                 break;
-            case"|1":
-               if (a == '|') {
+            case "|1":
+                if (a == '|') {
                     Nodo edt = Nodo.getLastChildFrom(c);
                     edt.setLiga(new Nodo("OPDOR", "||"));
-                    edt = edt.getLiga();
-                }else{
-                 Nodo edt = Nodo.getLastChildFrom(c);
+
+                } else {
+                    Nodo edt = Nodo.getLastChildFrom(c);
                     edt.setLiga(new Nodo("OPDOR", "|"));
-                    edt = edt.getLiga();
-               }
-            break;
-            case "CS":
-                  Nodo edt = Nodo.getLastChildFrom(c);
-                    edt.setLiga(new Nodo("CTEchar","'" +String.valueOf(a)+"'"));
-                    edt = edt.getLiga();
-                break;
-                
-                
-            default:
-                  if (isNumber(String.valueOf(a)) || isLetter(String.valueOf(a))) {
-                     edt = Nodo.getLastChildFrom(c);
-                    edt.setValor(edt.getValor() + String.valueOf(a));
-                    edt = edt.getLiga();
-                }else if(isOperator(String.valueOf(a)) || a=='+'|| a=='-'){
-                   edt = Nodo.getLastChildFrom(c);
-                      
-                    edt.setLiga(new Nodo("OPDOR",String.valueOf(a)));
-                    edt = edt.getLiga();
-                }else if(!estadoActual.equalsIgnoreCase("CS") && a==';'){
-                   edt = Nodo.getLastChildFrom(c);
-                      
-                    edt.setLiga(new Nodo("SEP",String.valueOf(a)));
-                    edt = edt.getLiga();
-                
-                }else if(!estadoActual.equalsIgnoreCase("ERROR") && a==','){
-                   edt = Nodo.getLastChildFrom(c);
-                      
-                    edt.setLiga(new Nodo("SEP",String.valueOf(a)));
-                    edt = edt.getLiga();
-                
                 }
-                
                 break;
-                
+            case "CS":
+                Nodo edt = Nodo.getLastChildFrom(c);
+                edt.setLiga(new Nodo("CTEchar", "'" + String.valueOf(a) + "'"));
+                break;
+
+            default:
+                if (estadoActual.equalsIgnoreCase("VARN") && a == '.') {
+                    edt = Nodo.getLastChildFrom(c);
+                    edt.setValor(edt.getValor() + String.valueOf(a));
+                } else if (isNumber(String.valueOf(a)) || isLetter(String.valueOf(a))) {
+                    edt = Nodo.getLastChildFrom(c);
+                    edt.setValor(edt.getValor() + String.valueOf(a));
+                } else if (isOperator(String.valueOf(a)) || a == '+' || a == '-') {
+                    edt = Nodo.getLastChildFrom(c);
+
+                    edt.setLiga(new Nodo("OPDOR", String.valueOf(a)));
+                } else if (!estadoActual.equalsIgnoreCase("CS") && a == ';') {
+                    edt = Nodo.getLastChildFrom(c);
+                    edt.setLiga(new Nodo("SEP", String.valueOf(a)));
+
+                } else if (!estadoActual.equalsIgnoreCase("ERROR") && a == ',') {
+                    edt = Nodo.getLastChildFrom(c);
+                    edt.setLiga(new Nodo("SEP", String.valueOf(a)));
+                }
+
+                break;
+
         }
 
         return c;
