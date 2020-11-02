@@ -1587,62 +1587,11 @@ public class AutomataIguales {
                 estadoActual = "ERROR";
             }
         } else if (estadoActual.equals("CS")) {
-            if (String.valueOf(a).equals("i")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("n")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("t")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("f")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("l")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("o")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("a")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("g")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("b")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("e")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("c")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("h")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("r")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("u")) {
-                estadoActual = "CSL";
-            } else if (isLetter(String.valueOf(a))) {
-                estadoActual = "CSL";
-            } else if (isNumber(String.valueOf(a))) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals(" ")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals(";")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("=")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("-")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("+")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals(";")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("'")) {
+         
+              if (String.valueOf(a).equals("'")) {
                 estadoActual = "ERROR";
-            } else if (String.valueOf(a).equals(".")) {
-                estadoActual = "ERROR";
-            } else if (isOperator(String.valueOf(a))) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("&")) {
-                estadoActual = "CSL";
-            } else if (String.valueOf(a).equals("|")) {
-                estadoActual = "CSL";
             } else {
-                estadoActual = "ERROR";
+                estadoActual = "CSL";
             }
         } else if (estadoActual.equals("CSL")) {
             if (String.valueOf(a).equals("i")) {
