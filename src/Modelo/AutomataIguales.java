@@ -1388,7 +1388,7 @@ public class AutomataIguales {
             } else if (isNumber(String.valueOf(a))) {
                 estadoActual = "VARN";
             } else if (String.valueOf(a).equals(" ")) {
-                estadoActual = "EPVAR";
+                estadoActual = "EVAR";
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ACEPTE";
             } else if (String.valueOf(a).equals("=")) {
@@ -1504,7 +1504,7 @@ public class AutomataIguales {
             } else if (isNumber(String.valueOf(a))) {
                 estadoActual = "VARNCC";
             } else if (String.valueOf(a).equals(" ")) {
-                estadoActual = "EPVAR";
+                estadoActual = "EVAR";
             } else if (String.valueOf(a).equals(";")) {
                 estadoActual = "ACEPTE";
             } else if (String.valueOf(a).equals("=")) {
